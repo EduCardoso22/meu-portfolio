@@ -1,19 +1,17 @@
-// src/app/contato/page.tsx
 import Link from 'next/link';
 import type { Metadata } from 'next';
-// Item 5: Importar ícones
 import { FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 
 export const metadata: Metadata = {
-  title: "Contato", // Item 8: Título específico
+  title: "Contato",
   description: "Entre em contato com Eduardo Cardoso Oliveira via LinkedIn, GitHub, Email ou WhatsApp.",
 };
 
 export default function ContatoPage() {
   return (
-    <main className="container mx-auto px-4 py-12 flex flex-col items-center flex-grow justify-center"> {/* Centraliza verticalmente */}
+    <main className="container mx-auto px-4 py-12 flex flex-col items-center flex-grow justify-center">
 
-      <section className="text-center max-w-xl"> {/* Define largura máxima */}
+      <section className="text-center max-w-xl">
         <h1 className="text-3xl font-bold mb-4">
           Entre em Contato
         </h1>
@@ -22,9 +20,7 @@ export default function ContatoPage() {
           Estou sempre aberto a novas conexões e oportunidades. Você pode me encontrar nas redes profissionais, enviar um email ou até mesmo uma mensagem via WhatsApp. Vamos conversar!
         </p>
 
-        {/* Item 7: Usar lista para melhor semântica de grupo */}
         <ul className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 sm:gap-6 mb-12 w-full">
-          {/* Item 5: Adicionar ícones */}
           <li>
             <a
               href="https://www.linkedin.com/in/eduardo-cardoso-308a13216/"
@@ -55,7 +51,7 @@ export default function ContatoPage() {
           </li>
           <li>
             <a
-              href="https://wa.me/5548988341377" // Link direto para WhatsApp
+              href="https://wa.me/5548988341377"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-5 py-2.5 border border-transparent text-base font-medium rounded-md text-green-700 dark:text-green-300 bg-green-100 dark:bg-green-900 hover:bg-green-200 dark:hover:bg-green-800 transition-colors shadow-sm w-full sm:w-auto"
@@ -65,7 +61,6 @@ export default function ContatoPage() {
           </li>
         </ul>
 
-        {/* Seção do Formulário (placeholder) */}
         <div className="border-t pt-8 mt-8 border-gray-200 dark:border-gray-700">
             <h2 className="text-xl font-semibold mb-3 text-gray-800 dark:text-white">Formulário de Contato</h2>
             <p className="text-gray-600 dark:text-gray-400 mb-4">

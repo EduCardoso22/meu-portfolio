@@ -1,13 +1,8 @@
-// src/app/page.tsx
 import Link from 'next/link';
-
-// Importe ícones se desejar (exemplo com react-icons, instale com `npm install react-icons`)
-// import { FaJava, FaHtml5, FaCss3Alt, FaJs, FaReact, FaGithub } from 'react-icons/fa';
 
 export default function Home() {
   return (
     <>
-      {/* Seção Hero */}
       <main className="flex flex-grow flex-col items-center justify-center text-center px-4 md:px-24 py-16 bg-gradient-to-b from-white to-gray-50 dark:from-black dark:to-gray-900">
         <section className="max-w-3xl">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-3 text-gray-900 dark:text-white">
@@ -28,12 +23,10 @@ export default function Home() {
         </section>
       </main>
 
-      {/* Seção Principais Habilidades */}
       <section className="w-full py-16 bg-gray-50 dark:bg-gray-950">
         <div className="container mx-auto px-4 text-center max-w-4xl">
           <h2 className="text-3xl font-bold mb-8 text-gray-800 dark:text-white">Principais Habilidades</h2>
           <div className="flex flex-wrap justify-center gap-4">
-            {/* Exemplo de badges de skills - Adicione ou remova conforme suas habilidades principais */}
             <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm font-medium px-4 py-2 rounded-full">Java</span>
             <span className="bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 text-sm font-medium px-4 py-2 rounded-full">HTML5</span>
             <span className="bg-sky-100 dark:bg-sky-900 text-sky-800 dark:text-sky-200 text-sm font-medium px-4 py-2 rounded-full">CSS3</span>
@@ -48,12 +41,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Seção Projetos em Destaque */}
       <section className="w-full py-16 bg-white dark:bg-black">
          <div className="container mx-auto px-4 text-center max-w-4xl">
            <h2 className="text-3xl font-bold mb-8 text-gray-800 dark:text-white">Projetos em Destaque</h2>
            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-              {/* Card Projeto 1 (Exemplo: Robocode) */}
              <div className="bg-gray-50 dark:bg-gray-800 rounded-lg shadow-md p-6 text-left border border-gray-200 dark:border-gray-700">
                 <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Robocode - Shigeo Kageyama</h3>
                 <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">Robô autônomo em Java para a plataforma Robocode.</p>
@@ -65,7 +56,6 @@ export default function Home() {
                   Ver detalhes &rarr;
                 </Link>
              </div>
-              {/* Card Projeto 2 (Exemplo: Este Portfólio) */}
              <div className="bg-gray-50 dark:bg-gray-800 rounded-lg shadow-md p-6 text-left border border-gray-200 dark:border-gray-700">
                 <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Portfólio Pessoal (Este site!)</h3>
                 <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">Desenvolvimento deste portfólio com Next.js e Tailwind CSS.</p>
