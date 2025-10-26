@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfólio Pessoal - Eduardo Cardoso Oliveira
 
-## Getting Started
+Bem-vindo ao repositório do meu portfólio pessoal! Este projeto foi desenvolvido como parte da disciplina de FrontEnd do curso do SENAC (Programa Jovem Programador) e serve como minha apresentação profissional online.
 
-First, run the development server:
+## Finalidade
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+O objetivo principal deste site é:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* Apresentar minhas habilidades técnicas (Hard Skills) e comportamentais (Soft Skills).
+* Exibir os projetos que desenvolvi ou participei.
+* Servir como um canal de contato profissional.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Este portfólio é um **protótipo em evolução**. Pretendo atualizá-lo continuamente ao longo da minha carreira, adicionando novos projetos, aprimorando o design e implementando novas funcionalidades conforme aprendo e desenvolvo novas competências.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Acesso Online
 
-## Learn More
+Você pode acessar a versão ao vivo do portfólio no seguinte link:
 
-To learn more about Next.js, take a look at the following resources:
+**[https://meu-portfolio-ten-henna.vercel.app/](https://meu-portfolio-ten-henna.vercel.app/)**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tecnologias Utilizadas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* **Framework:** [Next.js](https://nextjs.org/) (com App Router)
+* **Linguagem:** [TypeScript](https://www.typescriptlang.org/)
+* **Estilização:** [Tailwind CSS](https://tailwindcss.com/)
+* **Ícones:** [React Icons](https://react-icons.github.io/react-icons/)
+* **Hospedagem:** [Vercel](https://vercel.com/)
 
-## Deploy on Vercel
+## Como Executar Localmente
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Se você quiser rodar este projeto no seu ambiente de desenvolvimento, siga os passos abaixo:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/EduCardoso22/meu-portfolio.git](https://github.com/EduCardoso22/meu-portfolio.git)
+    cd meu-portfolio
+    ```
+
+2.  **Instale as dependências:**
+    ```bash
+    npm install
+    # ou
+    # yarn install
+    # ou
+    # pnpm install
+    ```
+
+3.  **Execute o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    # ou
+    # yarn dev
+    # ou
+    # pnpm dev
+    ```
+
+4.  Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
+
+## Próximos Passos (Possíveis Melhorias Futuras)
+
+* Adicionar imagens aos projetos.
+* Implementar um formulário de contato funcional.
+* Adicionar mais animações ou microinterações.
+* Refinar o design e a responsividade.
+
+---
+
+Sinta-se à vontade para explorar o código e entrar em contato!
