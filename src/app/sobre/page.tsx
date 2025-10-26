@@ -86,7 +86,7 @@ export default function SobrePage() {
            </article>
           <article>
             <h4 className="text-lg font-semibold text-gray-800 dark:text-white">Universidade Federal de Santa Catarina (UFSC)</h4>
-            <p className="text-sm text-gray-500 dark:text-gray-400">Bacharelado em Matemática | 3 semestres cursados</p>
+            <p className="text-sm text-gray-500 dark:text-gray-400">Licenciatura em Matemática | 3 semestres cursados</p>
           </article>
           <article>
             <h4 className="text-lg font-semibold text-gray-800 dark:text-white">Cursos Complementares</h4>
