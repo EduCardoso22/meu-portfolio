@@ -1,27 +1,28 @@
 // src/components/Navbar.tsx
-import Link from 'next/link'; // Importa o componente Link do Next.js para navegação
+import Link from 'next/link';
 
 export default function Navbar() {
   return (
-    <nav className="bg-gray-100 dark:bg-gray-800 p-4 shadow-md">
-      <div className="container mx-auto flex justify-between items-center">
-        {/* Seu Nome ou Logo (link para Home) */}
-        <Link href="/" className="text-xl font-bold text-black dark:text-white">
-          Portfólio - Eduardo Cardoso Oliveira
+    // Fundo branco/escuro, sombra suave, padding
+    <nav className="bg-white dark:bg-gray-900 shadow-sm sticky top-0 z-50"> 
+      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+        {/* Logo/Nome */}
+        <Link href="/" className="text-lg font-semibold text-gray-800 dark:text-white hover:text-blue-600 transition-colors">
+          Eduardo C. Oliveira
         </Link>
 
-        {/* Links de Navegação */}
-        <div className="space-x-4">
-          <Link href="/" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+        {/* Links */}
+        <div className="space-x-5"> {/* Aumentar espaço */}
+          <Link href="/" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors pb-1 border-b-2 border-transparent hover:border-blue-500">
             Home
           </Link>
-          <Link href="/sobre" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+          <Link href="/sobre" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors pb-1 border-b-2 border-transparent hover:border-blue-500">
             Sobre
           </Link>
-          <Link href="/projetos" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+          <Link href="/projetos" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors pb-1 border-b-2 border-transparent hover:border-blue-500">
             Projetos
           </Link>
-          <Link href="/contato" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+          <Link href="/contato" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors pb-1 border-b-2 border-transparent hover:border-blue-500">
             Contato
           </Link>
         </div>
