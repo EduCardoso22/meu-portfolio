@@ -1,6 +1,7 @@
 // src/app/projetos/page.tsx
 import Link from 'next/link';
 
+// Lista atualizada dos seus projetos
 const projetos = [
   {
     id: 'robocode-shigeo-kageyama',
@@ -20,6 +21,7 @@ const projetos = [
     descricaoCurta: 'Desenvolvimento deste portfólio usando Next.js, TypeScript e Tailwind CSS para apresentar minhas habilidades e projetos.',
     tecnologias: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
   },
+  // Adicione mais projetos aqui se tiver
 ];
 
 export default function ProjetosPage() {
@@ -30,18 +32,23 @@ export default function ProjetosPage() {
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Loop que gera um card para cada projeto na lista acima */}
         {projetos.map((projeto) => (
           <div
             key={projeto.id}
             className="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 flex flex-col overflow-hidden group"
           >
+            {/* Seção de conteúdo do card */}
             <div className="p-6 flex flex-col flex-grow">
+              {/* Título do Projeto */}
               <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white group-hover:text-blue-600 transition-colors">
                 {projeto.titulo}
               </h3>
+              {/* Descrição Curta */}
               <p className="text-gray-600 dark:text-gray-400 mb-4 text-sm flex-grow">
                 {projeto.descricaoCurta}
               </p>
+              {/* Tecnologias (Badges) */}
               <div className="flex flex-wrap gap-2 mb-4 mt-auto">
                 {projeto.tecnologias.map((tech) => (
                   <span
@@ -52,6 +59,7 @@ export default function ProjetosPage() {
                   </span>
                 ))}
               </div>
+              {/* Link para Detalhes */}
               <Link
                 href={`/projetos/${projeto.id}`}
                 className="text-blue-600 dark:text-blue-400 hover:underline mt-2 text-sm font-medium opacity-80 group-hover:opacity-100 transition-opacity"
@@ -65,3 +73,9 @@ export default function ProjetosPage() {
     </main>
   );
 }
+
+// Metadata opcional para a página (título da aba)
+export const metadata = {
+    title: "Projetos - Eduardo Oliveira",
+    description: "Explore os projetos desenvolvidos por Eduardo Cardoso Oliveira.",
+};

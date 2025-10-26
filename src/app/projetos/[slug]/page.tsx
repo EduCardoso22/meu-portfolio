@@ -1,48 +1,56 @@
 // src/app/projetos/[slug]/page.tsx
 import Link from 'next/link';
+import React from 'react';
 
 const projetos = [
    {
     id: 'robocode-shigeo-kageyama',
     titulo: 'Robocode - Shigeo Kageyama',
-    descricaoCurta: 'Projeto de um robô para a plataforma Robocode, desenvolvido em Java como atividade da disciplina de Algoritmos e Programação.',
-    descricaoCompleta: `Este projeto foi desenvolvido durante a disciplina de Algoritmos e Programação no curso de ADS do IFSC. O objetivo era criar um robô autônomo para competir na plataforma Robocode.
-Implementei estratégias de movimentação, mira e disparo utilizando a API do Robocode em Java. O robô "Shigeo Kageyama" foca em movimentação evasiva e mira preditiva simples. Foi uma ótima oportunidade para aplicar conceitos de lógica de programação e introdução à inteligência artificial em um ambiente prático e competitivo.`,
-    tecnologias: ['Java', 'Robocode'],
-    desafios: 'Entender a física e as APIs do Robocode, desenvolver uma lógica de combate eficaz e depurar o comportamento do robô em tempo real foram os principais desafios.',
+    descricaoCurta: 'Projeto de um robô para a plataforma Robocode, desenvolvido em Java como atividade da disciplina de Introdução a Computação.', // Mantido
+    // --- DESCRIÇÃO ATUALIZADA ---
+    descricaoCompleta: `Esta foi uma atividade prática realizada na disciplina de Introdução à Computação (IFSC). O objetivo principal foi aplicar os conceitos iniciais de programação em Java, além de exercitar o uso de Git/GitHub para versionamento de código e a familiarização com comandos básicos do sistema operacional Linux. O projeto consistiu em desenvolver a lógica de um robô de combate para a plataforma Robocode.`,
+    tecnologias: ['Java', 'Robocode', 'Git', 'Linux'], // Adicionado Git e Linux
+    // --- DESAFIOS ATUALIZADOS ---
+    desafios: 'O principal desafio foi aprender a utilizar a API específica do Robocode para controlar o robô, juntamente com a prática inicial de versionamento usando Git e comandos no terminal Linux.',
     linkRepositorio: 'https://github.com/EduCardoso22/Shigeo-Kageyama-ROBOCODE.git',
     linkDemo: '#',
   },
   {
     id: 'ifsc-java-poo-exercicios',
     titulo: 'Exercícios de Java POO (IFSC)',
-    descricaoCurta: 'Repositório com listas de exercícios resolvidos da disciplina de Programação Orientada a Objetos em Java (ADS - IFSC).',
-    descricaoCompleta: `Este repositório contém as soluções para as listas de exercícios propostas na disciplina de Programação Orientada a Objetos (POO) do curso de Análise e Desenvolvimento de Sistemas no IFSC.
-Os exercícios abrangem conceitos fundamentais de POO em Java, como classes, objetos, encapsulamento, herança, polimorfismo, interfaces e tratamento de exceções. Serviu como base prática para solidificar o aprendizado teórico da disciplina.`,
-    tecnologias: ['Java', 'POO', 'IDE (Eclipse/IntelliJ)'],
-    desafios: 'Compreender e aplicar corretamente os conceitos de POO para resolver os problemas propostos, especialmente herança e polimorfismo. Manter o código organizado e bem documentado.',
+    descricaoCurta: 'Repositório com listas de exercícios resolvidos da disciplina de Programação Orientada a Objetos em Java (ADS - IFSC).', // Mantido
+    // --- DESCRIÇÃO ATUALIZADA ---
+    descricaoCompleta: `Este repositório está diretamente relacionado à disciplina de Programação Orientada a Objetos (POO), que estou cursando atualmente em Análise e Desenvolvimento de Sistemas (IFSC). Ele abriga as soluções para as listas de exercícios propostas pelo professor durante as aulas, além de outros materiais e anotações úteis. É um projeto em contínuo desenvolvimento, acompanhando o progresso da disciplina.`,
+    tecnologias: ['Java', 'POO', 'IDE (Eclipse/IntelliJ)', 'Git'], // Adicionado Git
+    // --- DESAFIOS ATUALIZADOS ---
+    desafios: 'Aplicar corretamente os conceitos de Programação Orientada a Objetos (encapsulamento, herança, polimorfismo) na resolução dos problemas. Manter o repositório organizado e atualizado conforme as aulas avançam.',
     linkRepositorio: 'https://github.com/EduCardoso22/IFSC-Codespace-ENG-ADS-JAVA-POO.git',
     linkDemo: '#',
   },
   {
     id: 'portfolio-nextjs',
     titulo: 'Portfólio Pessoal (Este site!)',
-    descricaoCurta: 'Desenvolvimento deste portfólio usando Next.js, TypeScript e Tailwind CSS para apresentar minhas habilidades e projetos.',
-    descricaoCompleta: `Este projeto, que você está vendo agora, foi criado para ser meu cartão de visitas digital. Utilizei Next.js pelo seu excelente desempenho e otimizações de SEO.
-O TypeScript adiciona segurança e manutenibilidade. Tailwind CSS permitiu criar uma interface responsiva rapidamente. O deploy foi automatizado na Vercel.`,
-    tecnologias: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Vercel'],
-    desafios: 'Aprender e aplicar os conceitos do App Router do Next.js, configurar corretamente o TypeScript com React e garantir um bom desempenho.',
+    descricaoCurta: 'Desenvolvimento deste portfólio usando Next.js, TypeScript e Tailwind CSS.', // Mantido
+    // --- DESCRIÇÃO ATUALIZADA ---
+    descricaoCompleta: `Este portfólio foi desenvolvido como projeto para a disciplina de FrontEnd do curso do SENAC (Programa Jovem Programador). Ele serve como um protótipo inicial da minha presença online profissional. A intenção é que este seja um projeto vivo, que evoluirá ao longo da minha carreira, incorporando novas tecnologias, projetos e funcionalidades conforme aprendo e desenvolvo novas habilidades.
+A tecnologia base escolhida foi Next.js com TypeScript e Tailwind CSS, visando aplicar conceitos modernos de desenvolvimento web e garantir boa performance e manutenibilidade.`,
+    tecnologias: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Vercel', 'Git'], // Adicionado Git
+    // --- DESAFIOS ATUALIZADOS ---
+    desafios: 'Aplicar os conhecimentos adquiridos na disciplina de FrontEnd, aprender e integrar as tecnologias da stack (Next.js, TypeScript, Tailwind), estruturar o projeto de forma escalável e configurar o deploy. O principal desafio contínuo será manter o portfólio atualizado com novos aprendizados e projetos.',
     linkRepositorio: 'https://github.com/EduCardoso22/meu-portfolio',
     linkDemo: '#', // Adicione o link do site quando estiver online
   },
 ];
 
+// Função para buscar os dados do projeto pelo ID (slug)
 function getProjectData(slug: string) {
   return projetos.find((p) => p.id === slug);
 }
 
-export default function ProjetoDetalhePage({ params }: { params: { slug: string } }) {
-  const projeto = getProjectData(params.slug);
+// Componente da página (async para resolver params)
+export default async function ProjetoDetalhePage({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params;
+  const projeto = getProjectData(resolvedParams.slug);
 
   if (!projeto) {
     return (
@@ -55,6 +63,7 @@ export default function ProjetoDetalhePage({ params }: { params: { slug: string 
     );
   }
 
+  // Renderização dos detalhes do projeto
   return (
     <main className="container mx-auto px-4 py-8 max-w-3xl">
        <Link href="/projetos" className="text-blue-600 dark:text-blue-400 hover:underline mb-6 inline-block">
@@ -114,9 +123,6 @@ export default function ProjetoDetalhePage({ params }: { params: { slug: string 
             </a>
           )}
         </div>
-        {(projeto.linkRepositorio === '#' && !projeto.linkDemo || projeto.linkDemo === '#') && (
-            <p className="text-sm text-gray-500 dark:text-gray-400 italic mt-2">Nenhum link externo disponível para este projeto.</p>
-        )}
          {(!projeto.linkRepositorio || projeto.linkRepositorio === '#') && (!projeto.linkDemo || projeto.linkDemo === '#') && (
             <p className="text-sm text-gray-500 dark:text-gray-400 italic mt-2">Nenhum link externo disponível para este projeto.</p>
         )}
@@ -125,8 +131,10 @@ export default function ProjetoDetalhePage({ params }: { params: { slug: string 
   );
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const projeto = getProjectData(params.slug);
+// Metadata dinâmica (async para resolver params)
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params;
+  const projeto = getProjectData(resolvedParams.slug);
   return {
     title: `${projeto?.titulo ?? 'Projeto'} - Eduardo Oliveira`,
   };

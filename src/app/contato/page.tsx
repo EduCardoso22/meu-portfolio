@@ -64,7 +64,7 @@ export default function ContatoPage() {
           <EmailIcon /> Email
         </a>
 
-         <a
+         <a 
           href="https://wa.me/5548988341377" // Link direto para WhatsApp (formato internacional)
           target="_blank"
           rel="noopener noreferrer"
