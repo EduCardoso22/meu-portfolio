@@ -1,6 +1,7 @@
+// src/app/layout.tsx
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Navbar from "@/src/components/navbar"; // <<< 1. Importe a Navbar (usando o alias @/)
+import Navbar from "@/src/components/navbar";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Eduardo Cardoso Oliveira - Portfólio",
-  description: "Portfólio pessoal de Eduardo Cardoso Oliveira", // Você pode ajustar a descrição
+  description: "Portfólio pessoal de Eduardo Cardoso Oliveira",
 };
 
 export default function RootLayout({
@@ -26,11 +27,16 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`} // Adicionado flex flex-col min-h-screen
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen bg-background text-foreground`}
       >
-        <Navbar /> {/* <<< 2. Adicione a Navbar aqui */}
-        <div className="flex-grow">{children}</div> {/* Garante que o conteúdo principal ocupe o espaço */}
-        {/* Você pode adicionar um Footer aqui depois */}
+        <Navbar />
+        <div className="flex-grow">{children}</div>
+        {/* Adicione um Footer aqui */}
+        <footer className="bg-gray-100 dark:bg-gray-800 py-4 mt-12">
+           <div className="container mx-auto px-4 text-center text-sm text-gray-600 dark:text-gray-400">
+             © {new Date().getFullYear()} Eduardo Cardoso Oliveira. Todos os direitos reservados.
+           </div>
+        </footer>
       </body>
     </html>
   );
