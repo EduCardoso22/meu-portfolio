@@ -81,7 +81,7 @@ export default function SobrePage() {
             <p className="text-sm text-gray-500 dark:text-gray-400">Tecnólogo em Análise e Desenvolvimento de Sistemas | Em andamento</p>
           </article>
            <article>
-            <h4 className="text-lg font-semibold text-gray-800 dark:text-white">SENAI/SC - Programa Jovem Programador</h4>
+            <h4 className="text-lg font-semibold text-gray-800 dark:text-white">SENAC/SC - Programa Jovem Programador</h4>
             <p className="text-sm text-gray-500 dark:text-gray-400">Qualificação Profissional | Em andamento</p>
            </article>
           <article>
