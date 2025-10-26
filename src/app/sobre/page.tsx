@@ -93,7 +93,7 @@ export default function SobrePage() {
              <ul className="list-disc list-inside space-y-1 text-sm mt-2 text-gray-700 dark:text-gray-300">
                 <li>Pacote Office (Online)</li>
                 <li>LaTeX (Online)</li>
-                <li>HTML e CSS (Online - Plataforma Y)</li>
+                <li>HTML e CSS (Online)</li>
              </ul>
           </article>
         </div>
